@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AeropuertoModelStoreContainer" CdmEntityContainer="AeropuertoEntities1">
+    <EntitySetMapping Name="AeroLInea">
+      <EntityTypeMapping TypeName="AeropuertoModel.AeroLInea">
+        <MappingFragment StoreEntitySet="AeroLInea">
+          <ScalarProperty Name="idAeroliena" ColumnName="idAeroliena" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pasajero">
+      <EntityTypeMapping TypeName="AeropuertoModel.Pasajero">
+        <MappingFragment StoreEntitySet="Pasajero">
+          <ScalarProperty Name="idPasajero" ColumnName="idPasajero" />
+          <ScalarProperty Name="NombrePasajero" ColumnName="NombrePasajero" />
+          <ScalarProperty Name="ApellidoPasajero" ColumnName="ApellidoPasajero" />
+          <ScalarProperty Name="Sexo" ColumnName="Sexo" />
+          <ScalarProperty Name="Edad" ColumnName="Edad" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vuelo">
+      <EntityTypeMapping TypeName="AeropuertoModel.Vuelo">
+        <MappingFragment StoreEntitySet="Vuelo">
+          <ScalarProperty Name="idVuelo" ColumnName="idVuelo" />
+          <ScalarProperty Name="Capacidad" ColumnName="Capacidad" />
+          <ScalarProperty Name="NumeroVuelo" ColumnName="NumeroVuelo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
